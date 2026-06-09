@@ -173,10 +173,20 @@
       width: 100%; height: 100%; object-fit: cover;
       background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
     }
+    .card-thumb .thumb-cover {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; z-index: 0;
+    }
+    .card-thumb .thumb-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 100%);
+      transition: background 0.25s;
+    }
+    .work-card:hover .thumb-overlay { background: rgba(0,0,0,0.2); }
     .card-thumb .play-icon {
-      position: absolute;
+      position: absolute; z-index: 2;
       width: 48px; height: 48px; border-radius: 50%;
-      background: rgba(232,196,106,0.15); border: 2px solid var(--accent);
+      background: rgba(12,12,12,0.55); border: 2px solid var(--accent);
       display: flex; align-items: center; justify-content: center;
       transition: all 0.2s;
     }
@@ -187,7 +197,7 @@
     .work-card:hover .play-icon svg { fill: #0c0c0c; }
 
     .card-cat-badge {
-      position: absolute; top: 0.75rem; left: 0.75rem;
+      position: absolute; z-index: 2; top: 0.75rem; left: 0.75rem;
       padding: 0.2rem 0.65rem; border-radius: 3px;
       font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -476,7 +486,8 @@
          data-title="東區尤德夫人那打素醫院 醫療教育劇情短片"
          data-role="導演 · Medical Education">
       <div class="card-thumb">
-        <div class="thumb-bg" style="background: linear-gradient(135deg, #0a1208 0%, #0d0d0d 100%);"></div>
+        <img class="thumb-cover" src="cover-hospital.jpg" alt="" loading="lazy">
+        <div class="thumb-overlay"></div>
         <span class="card-cat-badge badge-commercial">Commercial</span>
         <div class="play-icon">
           <svg width="14" height="16" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z"/></svg>
@@ -498,7 +509,8 @@
          data-title="水務署 沙田濾水廠 吊運安全劇情片"
          data-role="導演">
       <div class="card-thumb">
-        <div class="thumb-bg" style="background: linear-gradient(135deg, #0a1414 0%, #0d0d0d 100%);"></div>
+        <img class="thumb-cover" src="cover-water.jpg" alt="" loading="lazy">
+        <div class="thumb-overlay"></div>
         <span class="card-cat-badge badge-commercial">Government</span>
         <div class="play-icon">
           <svg width="14" height="16" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z"/></svg>
@@ -518,7 +530,8 @@
          data-title="賽馬會青少年活動"
          data-role="導演 · 攝影 · 剪接">
       <div class="card-thumb">
-        <div class="thumb-bg" style="background: linear-gradient(135deg, #1a0f08 0%, #0d0d0d 100%);"></div>
+        <img class="thumb-cover" src="cover-jockey.jpg" alt="" loading="lazy">
+        <div class="thumb-overlay"></div>
         <span class="card-cat-badge badge-promotion">Event</span>
         <div class="play-icon">
           <svg width="14" height="16" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z"/></svg>
