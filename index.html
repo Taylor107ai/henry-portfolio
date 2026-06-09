@@ -44,6 +44,13 @@
     .nav-logo img {
       height: 36px; width: auto; display: block;
     }
+    .nav-logo-text {
+      margin-left: 0.7rem; font-size: 0.95rem; font-weight: 700;
+      letter-spacing: 0.06em; color: var(--text); white-space: nowrap;
+    }
+    @media (max-width: 768px) {
+      .nav-logo-text { font-size: 0.8rem; margin-left: 0.5rem; }
+    }
     .nav-links { display: flex; gap: 2rem; }
     .nav-links a {
       color: var(--muted); text-decoration: none; font-size: 0.88rem;
@@ -415,7 +422,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#hero"><img src="fung-studios-logo.jpg" alt="FUNG.STUDIOS" /></a>
+  <a class="nav-logo" href="#hero"><img src="fung-studios-logo.jpg" alt="Sunshing Production Co" /><span class="nav-logo-text">Sunshing Production Co</span></a>
   <div class="nav-links">
     <a href="#works">作品</a>
     <a href="#ai-visual">AI 影像</a>
