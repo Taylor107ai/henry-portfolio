@@ -247,6 +247,7 @@
       flex-direction: column; gap: 0.5rem;
     }
     .about-photo svg { opacity: 0.3; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
     .about-body p {
       font-size: 0.95rem; color: #bbb; line-height: 1.9; margin-bottom: 1.2rem;
     }
@@ -569,11 +570,7 @@
 
   <div class="about-grid">
     <div class="about-photo">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5">
-        <circle cx="12" cy="8" r="4"/>
-        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-      </svg>
-      <span style="font-size:0.75rem; color:var(--muted)">Photo Coming Soon</span>
+      <img src="director-photo.jpg" alt="Fung Kwun Hei (Henry)" />
     </div>
     <div class="about-body">
       <p>資深影視製作人，具備超過 8 年電視及電影製作實戰經驗。曾長期服務於 ViuTV 及 TVB，深度參與多部大型劇集之拍攝統籌及宣傳製作。</p>
