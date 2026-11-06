@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fung Kwun Hei (Henry) — 導演 & 影像製作人</title>
+  <title>Sunshing Production Co — 香港影像製作｜負責人 馮冠熹 Henry</title>
+  <meta name="description" content="Sunshing Production Co 香港影像製作公司，由導演馮冠熹 Henry 主理，承接劇情短片、人物專訪、政府／機構宣傳、商業廣告及活動拍攝。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taylor107ai.github.io/henry-portfolio/" />
+  <meta property="og:title" content="Sunshing Production Co — 香港影像製作" />
+  <meta property="og:description" content="劇情短片、人物專訪、政府／機構宣傳、商業廣告及活動拍攝。負責人：導演 馮冠熹 Henry。" />
+  <meta property="og:image" content="https://taylor107ai.github.io/henry-portfolio/cover-hospital.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     :root {
       --bg: #0c0c0c;
@@ -114,6 +121,38 @@
       font-size: 2rem; font-weight: 800; color: var(--accent);
     }
     .stat-label { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.08em; }
+    .hero-lead {
+      margin-top: 1.4rem; font-size: 0.92rem; color: var(--text);
+      letter-spacing: 0.04em;
+    }
+    .hero-lead span { color: var(--accent); }
+    .stats-note { margin-top: 0.8rem; font-size: 0.72rem; color: var(--muted); }
+
+    /* ── SERVICES ── */
+    #services { background: var(--bg); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .service-item {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.5rem 1.6rem;
+    }
+    .service-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .service-item h3 small {
+      display: block; font-size: 0.68rem; font-weight: 600; color: var(--accent);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.3rem;
+    }
+    .service-item p { font-size: 0.83rem; color: #999; line-height: 1.65; }
+
+    /* ── FOUNDER (inside About) ── */
+    .founder-head {
+      margin: 2.4rem 0 1rem; padding-top: 2rem; border-top: 1px solid var(--border);
+    }
+    .founder-head .section-label { margin-bottom: 0.3rem; }
+    .founder-head h3 { font-size: 1.4rem; font-weight: 800; }
+    .founder-head h3 span { color: var(--muted); font-size: 0.9rem; font-weight: 600; margin-left: 0.5rem; }
+    .photo-caption { margin-top: 0.8rem; font-size: 0.82rem; color: var(--muted); text-align: center; }
 
     /* ── SECTION COMMON ── */
     section { padding: 6rem 3rem; }
@@ -417,10 +456,15 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { gap: 1.2rem; }
-      section { padding: 4rem 1.5rem; }
-      #hero { padding: 5rem 1.5rem 3rem; }
+      nav { padding: 0.8rem 1.5rem 0.7rem; flex-wrap: wrap; row-gap: 0.6rem; }
+      .nav-links {
+        width: 100%; gap: 1.3rem; overflow-x: auto;
+        scrollbar-width: none; -webkit-overflow-scrolling: touch;
+      }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { white-space: nowrap; }
+      section { padding: 4rem 1.5rem; scroll-margin-top: 96px; }
+      #hero { padding: 8rem 1.5rem 3rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .credits-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 2rem; }
@@ -435,6 +479,7 @@
 <nav>
   <a class="nav-logo" href="#hero"><img src="fung-studios-logo.jpg" alt="Sunshing Production Co" /><span class="nav-logo-text">Sunshing Production Co</span></a>
   <div class="nav-links">
+    <a href="#services">服務</a>
     <a href="#works">作品</a>
     <a href="#ai-visual">AI 影像</a>
     <a href="#credits">電視劇</a>
@@ -445,12 +490,13 @@
 
 <!-- HERO -->
 <section id="hero">
-  <p class="hero-tag">Director · DOP · Filmmaker</p>
-  <h1 class="hero-name">Fung Kwun Hei<br><span>馮冠熹 Henry</span></h1>
-  <p class="hero-role">導演 &nbsp;|&nbsp; 副導演 &nbsp;|&nbsp; 影像製作人</p>
+  <p class="hero-tag">Video Production · Hong Kong</p>
+  <h1 class="hero-name">Sunshing<br><span>Production Co</span></h1>
+  <p class="hero-role">劇情短片 &nbsp;|&nbsp; 人物專訪 &nbsp;|&nbsp; 政府／機構宣傳 &nbsp;|&nbsp; 商業影像</p>
   <p class="hero-desc">
-    資深影視製作人，具備超過 8 年電視及電影製作實戰經驗。曾長期服務於 ViuTV 及 TVB，2025 年起成立個人工作室，專注於劇情短片、人物專訪、政府／機構宣傳及商業影像製作。Owner-Operator of Sony FX6 &amp; FX3。
+    香港影像製作公司，由前期籌劃、現場執導到後期剪接一站式處理，以電視劇集級數的製作經驗，為機構及品牌拍出有溫度、有故事的影片。
   </p>
+  <p class="hero-lead">負責人 &nbsp;·&nbsp; <span>導演 馮冠熹 Henry</span></p>
   <div class="hero-cta">
     <a class="btn btn-primary" href="#works">瀏覽作品</a>
     <a class="btn btn-outline" href="#contact">洽談合作</a>
@@ -458,15 +504,49 @@
   <div class="hero-stats">
     <div>
       <div class="stat-num">8+</div>
-      <div class="stat-label">Years Experience</div>
+      <div class="stat-label">年影視製作經驗</div>
     </div>
     <div>
       <div class="stat-num">20+</div>
-      <div class="stat-label">TV Productions</div>
+      <div class="stat-label">電視劇集參與</div>
     </div>
     <div>
       <div class="stat-num">2</div>
-      <div class="stat-label">Major Networks</div>
+      <div class="stat-label">電視台背景 · ViuTV / TVB</div>
+    </div>
+  </div>
+  <p class="stats-note">* 數字為負責人個人經歷</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <p class="section-label">Services</p>
+  <h2 class="section-title">服務範圍</h2>
+  <div class="section-divider"></div>
+  <div class="services-grid">
+    <div class="service-item">
+      <h3><small>Drama Short</small>劇情短片</h3>
+      <p>醫療教育、安全培訓、品牌故事，將資訊包裝成觀眾願意睇完的劇情。</p>
+    </div>
+    <div class="service-item">
+      <h3><small>Interview</small>人物專訪</h3>
+      <p>人物故事、企業領袖及客戶見證訪問，由採訪構思到剪接成片。</p>
+    </div>
+    <div class="service-item">
+      <h3><small>Government &amp; NGO</small>政府／機構宣傳</h3>
+      <p>政府部門、醫院、社福機構的宣傳及教育影片，熟悉機構審批流程。</p>
+    </div>
+    <div class="service-item">
+      <h3><small>Commercial</small>品牌及商業廣告</h3>
+      <p>形象廣告、產品影片及社交媒體短片，兼顧影像美學與傳播效果。</p>
+    </div>
+    <div class="service-item">
+      <h3><small>Event &amp; Making Of</small>活動及幕後紀錄</h3>
+      <p>活動紀錄、劇集及電影幕後特輯，捕捉現場氣氛並快速出片。</p>
+    </div>
+    <div class="service-item">
+      <h3><small>AI Visual</small>AI 影像</h3>
+      <p>以實拍素材為基礎結合 AI 生成，製作傳統拍攝難以實現的畫面。</p>
     </div>
   </div>
 </section>
@@ -480,7 +560,7 @@
   <!-- 可播放作品 -->
   <div class="works-grid" style="margin-bottom: 4rem;">
 
-    <!-- 醫院 (Vimeo) -->
+    <!-- 醫院 (YouTube) -->
     <div class="work-card" data-cat="commercial"
          data-video="lL3OlBF5B7M" data-type="youtube"
          data-title="東區尤德夫人那打素醫院 醫療教育劇情短片"
@@ -629,10 +709,10 @@
 
 <!-- TV CREDITS -->
 <section id="credits">
-  <p class="section-label">Production Credits</p>
-  <h2 class="section-title">電視劇集製作經驗</h2>
+  <p class="section-label">Founder's Credits</p>
+  <h2 class="section-title">負責人電視劇集經驗</h2>
   <div class="section-divider"></div>
-  <p style="color:var(--muted); font-size:0.88rem; margin-bottom:2rem;">副導演 (Assistant Director / 2nd AD) &nbsp;·&nbsp; 2017–2024</p>
+  <p style="color:var(--muted); font-size:0.88rem; margin-bottom:2rem;">馮冠熹 Henry 於成立公司前任職副導演 (Assistant Director / 2nd AD) &nbsp;·&nbsp; 2017–2024</p>
 
   <div class="credits-grid">
     <div class="credit-block">
@@ -661,17 +741,25 @@
 <!-- ABOUT -->
 <section id="about">
   <p class="section-label">About</p>
-  <h2 class="section-title">關於 Henry</h2>
+  <h2 class="section-title">關於我們</h2>
   <div class="section-divider"></div>
 
   <div class="about-grid">
-    <div class="about-photo">
-      <img src="director-photo.jpg" alt="Fung Kwun Hei (Henry)" />
+    <div>
+      <div class="about-photo">
+        <img src="director-photo.jpg" alt="負責人 馮冠熹 Henry" />
+      </div>
+      <p class="photo-caption">負責人／導演 &nbsp;馮冠熹 Henry</p>
     </div>
     <div class="about-body">
-      <p>資深影視製作人，具備超過 8 年電視及電影製作實戰經驗。曾長期服務於 ViuTV 及 TVB，深度參與多部大型劇集之拍攝統籌及宣傳製作。</p>
-      <p>2025 年起成立個人工作室，轉型為獨立製作人及導演，專注於劇情短片、人物專訪、政府 / 機構宣傳及具藝術感之商業影像。</p>
-      <p>身為 Owner-Operator，熟悉由前期籌劃、現場執導到後期剪接的完整製作流程，擅長處理具情感張力的敘事題材，並能穩定拿捏影像美學。</p>
+      <p>Sunshing Production Co 於 2025 年成立，是一間香港影像製作公司，專注於劇情短片、人物專訪、政府／機構宣傳及具藝術感的商業影像。</p>
+      <p>我們由前期籌劃、現場執導到後期剪接一條龍處理，擅長將教育、安全或品牌訊息轉化成有情感張力的故事，並以自家器材靈活配合不同規模的製作。</p>
+
+      <div class="founder-head">
+        <p class="section-label">Founder</p>
+        <h3>馮冠熹 Henry<span>Fung Kwun Hei · 導演</span></h3>
+      </div>
+      <p>具備超過 8 年電視及電影製作經驗，曾長期服務於 ViuTV 及 TVB，任副導演參與多部劇集的拍攝統籌，亦負責劇集及院線電影的幕後宣傳製作。</p>
       <p style="color:var(--accent); font-size:0.85rem;">📷 Owner-Operator of Sony FX6 &amp; FX3 &nbsp;·&nbsp; Arri · RED · A7 Series</p>
 
       <div class="skills-chips">
@@ -696,8 +784,11 @@
     <p class="section-label" style="text-align:center;">Contact</p>
     <h2 class="section-title">合作洽談</h2>
     <div class="section-divider" style="margin: 1.2rem auto 1.5rem;"></div>
-    <p>歡迎查詢影片製作、品牌廣告、人物專訪、政府宣傳片等各類項目。</p>
-    <a class="btn btn-primary" href="mailto:hei67hk@gmail.com">發送電郵</a>
+    <p>歡迎查詢影片製作、品牌廣告、人物專訪、政府宣傳片等各類項目，負責人 Henry 會親自跟進。</p>
+    <div class="hero-cta" style="justify-content:center; margin-top:0;">
+      <a class="btn btn-primary" href="https://wa.me/85298765631" target="_blank" rel="noopener">WhatsApp 查詢</a>
+      <a class="btn btn-outline" href="mailto:hei67hk@gmail.com">發送電郵</a>
+    </div>
     <div class="contact-links">
       <a class="contact-link" href="tel:+85298765631">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.22 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
@@ -726,7 +817,7 @@
 </div>
 
 <footer>
-  <p>© 2025 馮冠熹 Fung Kwun Hei (Henry) · FUNG.STUDIOS · 香港影像製作</p>
+  <p>© 2026 Sunshing Production Co · 負責人 馮冠熹 Henry · 香港影像製作</p>
 </footer>
 
 <script>
